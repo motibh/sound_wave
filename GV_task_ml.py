@@ -12,10 +12,10 @@ from sklearn.preprocessing import StandardScaler
 
 def plot_ml(y_pred, label_test, ml=[]):
     plt.figure()
-    relatie_err = np.abs(y_pred - label_test) / np.abs(label_test)
-    plt.plot(relatie_err, 'or')
+    relative_err = np.abs(y_pred - label_test) / np.abs(label_test)
+    plt.plot(relative_err, 'or')
     mse = mean_squared_error(label_test, y_pred)
-    plt.title(f'relative error- {ml}, median= {np.round(np.median(relatie_err),4)},  mse = {np.round(mse,4)}')
+    plt.title(f'relative error- {ml}, median= {np.round(np.median(relative_err),4)},  mse = {np.round(mse,4)}')
     plt.show()
 
 xls = pd.read_csv(os.getcwd()+f'\\gv_data1.csv')
