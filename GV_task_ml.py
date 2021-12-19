@@ -1,5 +1,6 @@
 import pandas as pd
 import pickle
+from time import time
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -45,5 +46,5 @@ y_pred_reg=reg.predict(x_test)
 plot_ml(y_pred_reg, label_test, ml='LinearRegression')
 
 #plt.plot(label_test[:20],'*b')
-dd=1
+time.sleep(5.5)    # Pause 5.5 seconds
 
