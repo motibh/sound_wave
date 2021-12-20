@@ -25,7 +25,7 @@ def dict_all_csv(sample_rate=50, time_v=[9.5,60]):
     return dict_all
 
 time_v= [9.5,10.75,12,13.5,15.75,60]
-s_rate=4
+s_rate=1
 smoth = False
 freq=1/(s_rate*0.0125e-6)
 # merge all data to single dict
@@ -82,4 +82,4 @@ for box in [1, 2, 3]:
 plt.figure()
 plt.plot(filter_delay)
 
-time.sleep(5.5)    # Pause 5.5 seconds
+time.sleep(5.5)
