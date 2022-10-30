@@ -9,6 +9,7 @@ def dict_all_csv(sample_rate=50, time_v=[9.5,60]):
     """
            merge all .csv files into single dict
     """
+    print('work')
     dict_all={}
     for box in [1,2,3]:
         for pair in [1,2]:
